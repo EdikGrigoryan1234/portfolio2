@@ -247,7 +247,16 @@ color: #fff;
     border: 1px solid #fff;
     background-color: #7127BA;
     color: #fff;
+    cursor: pointer;
     border-radius:10px ;    
+    transition: 1s;
+}
+.card__btn:hover{
+    color: #7127BA;
+    /* border:none; */
+    background: #fff;
+    border: 2px solid #7127BA;
+    transition: 1s;
 }
 .card__Group{
     display: flex;
@@ -261,7 +270,7 @@ color: #fff;
 }
 .section3{
     width: 100%;
-    height:250vh;
+    height:300vh;
     background-color:#11071F ;
 }
 .section3__container{
@@ -393,7 +402,7 @@ font-size: 34px;
 font-weight: 600;
 line-height: 51px;
 letter-spacing: 0.02em;
-text-align: left;
+text-align: left;   
 
 }
 .section3__card__text{
@@ -402,7 +411,8 @@ text-align: left;
     justify-content: center;
     color: #fff;
     width: 590px;
-height: 108px;
+height: 208px;
+padding: 20px;
 top: 2912px;
 left: 494px;
 gap: 0px;
@@ -434,4 +444,58 @@ opacity: 0px;
 -webkit-box-shadow: -36px -26px 5px -10px rgba(113, 39, 186, 0.42);
 -moz-box-shadow: -36px -26px 5px -10px rgba(113, 39, 186, 0.42);
 box-shadow: -36px -26px 5px -10px rgba(113, 39, 186, 0.42);
+}
+.contact{
+    width: 100%;
+    height: 80vh;
+    
+}
+.contact__contaner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact__title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.title{
+font-size: 25px;
+font-weight: 400;
+line-height: 45.17px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #fff;
+}
+.contact__text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    gap: 50px;
+    }
+.contact__text>p{
+    width: 703px;
+    color: #fff;
+    font-size: 15px;
+font-weight: 400;
+line-height: 27.1px;
+letter-spacing: 0.02em;
+text-align: center;
+
+}
+.cntacct__icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px   ;
 }
