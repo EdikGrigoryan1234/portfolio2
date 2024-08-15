@@ -45,7 +45,7 @@ transition: 1s;
 }
 .section1{
     width: 100%;
-    height: 180vh;
+    height: 200vh;
     display: flex;
     justify-content: center;
     background: #11071F
@@ -65,27 +65,34 @@ transition: 1s;
     gap: 336px;
     padding-right: 180px;
 }
+.div{
+    position: relative;
+    
+}
 .section1__top__left{
     width: 50%;
     position: relative;
 }
 .section1__img1{
-    position: absolute;
+        position: absolute;
     top: 27px;
-    right: -152px;
+    right: -52px;
 }
 .section1__img2{
     position: absolute;
-    top: -27px;
-    right: -152px;
+    /* top: 0px;
+    left: 300px; */
 }
 .section1__top__left__texts{
     position: absolute;
     display: flex;
     width: auto;
-    top: -80px;
-    left: 430px;
-
+    left: 100px;
+}
+.section1__top__left__text1{
+    position: absolute;
+    bottom: -50px;
+    left: 100px;
 }
 .section1__top__left__text1,.section1__top__left__text2{
     width: 100px;
@@ -101,29 +108,36 @@ text-align: center;
     width: 200px;
     color: #7127BA;
     padding-right: 60px;
-}
+    margin-left: 100px;
+    position: absolute;
+    top: -45px;
+    left: 100px;
+    }
 .section1__top__right{
     padding-top: 50px;
 }
 .section1__top__text{
     color: #fff;
 }
+
 .section1__top__title,.section1__top__title2{
-font-size: 50px;
-font-weight: 400;
-line-height: 63.33px;
-letter-spacing: 0.02em;
-color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 63.33px;
+    letter-spacing: 0.02em;
+    color: #fff;
 }
 .section1__top__title2{
+    width: 100px;
     position: relative;
     color: #7127BA;
 }
 .section1__elips{
     position: absolute;
-    bottom: 130px;
-    right:240px;
+    bottom:-3px;
+    right:-55px;
 }
+
 .section1__bottom{
     display: flex;
     flex-direction: column;
@@ -447,9 +461,10 @@ box-shadow: -36px -26px 5px -10px rgba(113, 39, 186, 0.42);
 }
 .contact{
     width: 100%;
-    height: 80vh;
-    
-}
+    height: 100vh;
+        background: #11071F;
+    padding-top: 200px;
+    }
 .contact__contaner{
     width: 100%;
     height: 100%;
@@ -498,4 +513,244 @@ text-align: center;
     justify-content: center;
     gap: 10px;
     padding: 20px   ;
+}
+@media (max-width:1100px) {
+    .card{
+        width:450px;
+    }
+}
+@media(max-width:950px){
+.header{
+    height: auto;
+}
+.header__container{
+    padding: 5px;
+}
+    .menu{
+    flex-direction: column  ;
+    gap: 0;
+
+}
+.section1{
+    height:250vh;
+
+}
+.section1__container{
+    height: auto;
+}
+.section1__top{
+    flex-direction:column ;
+    padding-left: 100px;
+    padding-bottom: 200px;
+    padding-left: 81px;
+}
+.section1__bottom{
+    height: 100vh;
+    padding-left:150px;
+    padding-top: 220px;
+    justify-content: start;
+    padding-right: 120px;
+}
+.section1__bottom__text{
+width: 200px;
+    gap: 0;
+} 
+.section1__bottom__text3{
+width: 500px;
+z-index: 100;
+text-align: center;
+
+}
+.section2{
+    height: 300vh;
+    overflow: hidden;
+}
+.section2__container{
+    padding-top: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.card__Group{
+    flex-direction: column;
+}
+.card{
+        width: 300px;
+}
+.section3{
+    height: 400vh;
+    
+}
+.section3__card__img>img{
+    max-width: 450px;
+}
+.section3__card{
+    flex-direction: column;
+}
+.section3__card__text{
+    width: 450px;
+    
+}
+.skils__diogram{
+    width: 400px;
+}
+.contact{
+    height: 150vh;
+    padding-top: 500px;
+}
+.section3__titles{
+    flex-direction: column;
+}
+.section3__text{
+    width: 400px;
+}
+[class*=diogram__icon]{
+
+    width:10px;
+}
+.diogram__icon1 {
+    position: absolute;
+    bottom: 270px;
+    left: 268px;
+}
+.diogram__icon2 {
+    position: absolute;
+    bottom: 273px;
+    left: 243px;
+}
+.diogram__icon3 {
+    position: absolute;
+    bottom: 273px;
+    left: 218px;
+}
+.diogram__icon4 {
+    position: absolute;
+    bottom: 273px;
+    left: 194px;
+}
+.contact{
+    height: 170vh;
+}
+.diogram__icon5  {
+    position: absolute;
+    bottom: 273px;
+    left: 169px;
+}
+.diogram__icon6  {
+    position: absolute;
+    bottom: 273px;
+    left: 144px;
+}
+.contact__text>p{
+    width: 300px;
+}
+.diogram__icon7  {
+    position: absolute;
+    bottom: 273px;
+    left: 119px;
+}
+.diogram__icon8  {
+    position: absolute;
+    bottom: 245px;
+    left: 132px;
+}
+.diogram__icon9  {
+    position: absolute;
+    bottom: 245px;
+    left: 159px;
+}
+.diogram__icon10  {
+    position: absolute;
+    bottom: 245px;
+    left: 182px;
+}
+.diogram__icon11  {
+    position: absolute;
+    bottom: 245px;
+    left: 207px;
+}
+.diogram__icon12  {
+    position: absolute;
+    bottom: 247px;
+    left: 234px;
+}
+.diogram__icon13  {
+    position: absolute;
+    bottom: 247px;
+    left: 255px;
+}
+
+.skils__icons>img{
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}
+}
+@media (max-width:530px) {
+    .section1__img2 {
+        top: 169px;
+        left: -71px;
+        transform: rotate(112deg);
+    }
+    .section1__top__left__text1 {
+        position: absolute;
+        font-size: 17px;
+        top: 204px;
+        left: -76px;
+    }
+    .section1__img1 {
+        position: absolute;
+        top: -111px;
+        right: -52px;
+    }
+    .section1__top__left__text2 {
+        font-size: 17px;
+        top: 227px;
+        left: -131px;
+    }
+    section1__top__left__texts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card__text{
+        width: 130px;
+    }
+    .card{
+        height: 300px;
+    }
+    .section1{
+        height: 272vh;
+    }
+    .section2{
+        height: 370vh;
+    }
+    .section3__card__text {
+        width: 390px;
+    }
+    .section3{
+        overflow: hidden;
+    }
+    .section3__card__img>img {
+        max-width: 394px;
+    }
+    .section1__bottom__text3{
+        font-size: 14px;
+        width: 300px;
+    
+    }
+}
+@media (max-width:300px) {
+    .section1__bottom__div{
+        width: 200px;
+        flex-wrap: wrap;
+    }
+    .section3__card__text {
+        width: 290px;
+        font-size: 14px;
+    }
+    .section1__top__left__text2 {
+        font-size: 17px;
+        top: 227px;
+        left: -183px;
+    }
 }
