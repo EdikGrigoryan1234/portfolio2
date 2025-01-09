@@ -20,6 +20,7 @@
 [class*="__container"] {
 	max-width: 1086px;
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 body,
 html {
@@ -29,6 +30,7 @@ html {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
+	background-color: #11071f;
 }
 .main {
 	flex: 1 1 auto;
@@ -266,8 +268,7 @@ template {
 .section1 {
 	width: 100%;
 	height: auto;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -279,6 +280,8 @@ template {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 .sec1__texts {
 	width: 356px;
@@ -369,8 +372,77 @@ template {
 }
 .section2 {
 	width: 100%;
-	height: 100vh;
+	height: auto;
 	background: #11071f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section2__container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 70px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.section2__titles{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.section2__title2,.section2__span{
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 21px;
+font-weight: 400;
+line-height: 37.94px;
+letter-spacing: 0.02em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+gap: 5px;
+
+}
+.section2__span{
+	color: #1877F2;
+}
+.section2__title2{
+	width: 573px;
+	height: 38px;
+	flex-wrap: wrap;
+
+}
+.section2__text{
+	width: 672px;
+height: 120px;
+color: #fff;
+font-size: 20px;
+font-weight: 400;
+line-height: 39.75px;
+letter-spacing: 0.02em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.section2__title{
+	width: 674px;
+height: 90px;
+color: #fff;
+font-size: 50px;
+font-weight: 400;
+line-height: 90.33px;
+letter-spacing: 0.02em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
 }
 /*Response*/
 
@@ -405,6 +477,20 @@ template {
 	.section1__container {
 		flex-direction: column;
 	}
+	.section2__text {
+		width: 400px;
+		font-size: 16px;
+	}
+	.section2__title2 {
+		width: 400px;
+		font-size: 17px;
+	}
+	.section2__span{
+		font-size: 17px;
+	}
+	.section2__title{
+		font-size:33px ;
+	}
 }
 @media (max-width: 500px) {
 	.header {
@@ -430,4 +516,16 @@ template {
 	.section1__img {
 		left: 16%;
 	}
+	.section2__title2 {
+		width: 287px;
+	
+	}
+	.section2__title {
+		font-size: 27px;
+		width: 308px;
+  }
+  .section2__text {
+	width: 280px;
+	font-size: 13px;
+}
 }
