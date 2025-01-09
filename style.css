@@ -217,15 +217,15 @@ template {
 
 /*PORTFOLIO*/
 
-.header{
+.header {
 	width: 100%;
 	height: 113px;
-	background: #1A0B2E;
+	background: #1a0b2e;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.header__container{
+.header__container {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -233,57 +233,201 @@ template {
 	align-items: center;
 	padding-left: 20px;
 }
-.menu{
+.menu {
 	display: flex;
-	gap:168px;
+	gap: 168px;
 }
-.logo{
+.logo {
 	transition: 1s;
 }
-.menu__list{
+.menu__list {
 	width: 66px;
-height: 27px;
+	height: 27px;
 }
-.menu__link{
-font-size: 20px;
-font-weight: 600;
-line-height: 25.2px;
-letter-spacing: 0.02em;
-text-align: center;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #fff;
-transition: 1s;
-}
-.menu__list:hover>.menu__link{
-	color: #7127BA;
+.menu__link {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 25.2px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	color: #fff;
 	transition: 1s;
 }
-.logo:hover{
+.menu__list:hover > .menu__link {
+	color: #7127ba;
+	transition: 1s;
+}
+.logo:hover {
 	transform: rotate(360deg);
 	transition: 1s;
 }
-
+.section1 {
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #11071f;
+}
+.section1__container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sec1__texts {
+	width: 356px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	position: absolute;
+	left: 301px;
+	bottom: 333px;
+}
+.arrow {
+	padding-top: 50px;
+	object-fit: cover;
+}
+.sec1__text1 {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 5px;
+}
+.sec1__text1,
+.sec1__text2 {
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 97px;
+	letter-spacing: -0.5px;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	color: #fff;
+}
+.sec1__text2 {
+	color: #7127ba;
+}
+.section1__right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section1__images {
+	position: relative;
+	display: flex;
+}
+.section1__img {
+	position: absolute;
+	object-fit: cover;
+	left: 26%;
+	top: 65px;
+}
+.section1__left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.ellipse1 {
+	width: 188.58px;
+	height: 57.9px;
+	position: absolute;
+	top: 10px;
+	right: -45px;
+}
+.section1__title {
+	width: 386px;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 63.33px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+.section1__span {
+	color: #7127ba;
+	position: relative;
+}
+.section1__text {
+	color: #fff;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 19.87px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+.section2 {
+	width: 100%;
+	height: 100vh;
+	background: #11071f;
+}
 /*Response*/
 
-@media (max-width:700px) {
-	.menu{
+@media (max-width: 700px) {
+	.menu {
 		gap: 20px;
 	}
-	.header__container{
+	.header__container {
 		justify-content: center;
 		gap: 100px;
 	}
+	.section1__text {
+		width: 170px;
+		font-size: 16px;
+	}
+	.section1__title {
+		width: 280px;
+		font-size: 45px;
+	}
+	.sec1__texts {
+		gap: 0;
+		left: 136px;
+	}
+	.section1__left {
+		width: 100%;
+		align-items: center;
+	}
+	.section1__right {
+		width: 100%;
+		justify-content: start;
+	}
+	.section1__container {
+		flex-direction: column;
+	}
 }
-@media (max-width:400px) {
-	.header{
+@media (max-width: 500px) {
+	.header {
 		height: auto;
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
-		.header__container{
-			flex-direction: column;
-			align-items: center;
-			gap: 20px;
-		}
+	.header__container {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+	.sec1__text1 {
+		flex-direction: column;
+		line-height: 20px;
+	}
+	.sec1__text2 {
+		line-height: 20px;
+	}
+	.sec1__texts {
+		left: 47px;
+	}
+	.section1__img {
+		left: 16%;
+	}
 }
