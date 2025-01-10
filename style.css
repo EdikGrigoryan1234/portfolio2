@@ -20,10 +20,6 @@
 [class*="__container"] {
 	max-width: 1086px;
 	margin: 0 auto;
-	
-}
-body{
-	background: #11071f;
 }
 
 /*PORTFOLIO*/
@@ -39,6 +35,7 @@ body{
 .header__container {
 	width: 100%;
 	height: 100%;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -226,12 +223,10 @@ body{
 	color: #1877f2;
 }
 
-
 .section2__title2 {
 	width: 573px;
 	height: 38px;
 	flex-wrap: wrap;
-
 }
 
 .section2__text {
@@ -279,8 +274,7 @@ body{
 .section3__back {
 	position: absolute;
 	width: 625px;
-height: 700px;
-
+	height: 700px;
 }
 
 .section3__title {
@@ -309,7 +303,6 @@ height: 700px;
 	width: 450px;
 	height: 192.68px;
 
-	
 	display: flex;
 	border-top: 1px solid #693b93;
 	background: #1a0b2e8a;
@@ -345,7 +338,7 @@ height: 700px;
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
 }
-.card__texts{
+.card__texts {
 	display: flex;
 	flex-direction: column;
 	gap: 11px;
@@ -357,7 +350,6 @@ height: 700px;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
-
 }
 .card__btn {
 	width: 119px;
@@ -373,10 +365,124 @@ height: 700px;
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
 }
+.section4 {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #11071f;
+}
+.section4__container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+.skils {
+	padding-top: 80px;
+	position: relative;
+}
+.diogram__icon1 {
+	position: absolute;
+	bottom: 600px;
+	left: 266px;
+}
+.diogram__icon2 {
+	position: absolute;
+	bottom: 603px;
+	left: 316px;
+}
+.diogram__icon3 {
+	position: absolute;
+	bottom: 600px;
+	left: 370px;
+}
+.diogram__icon4 {
+	position: absolute;
+	bottom: 600px;
+	left: 428px;
+}
+.diogram__icon5 {
+	position: absolute;
+	bottom: 600px;
+	right: 379px;
+}
+.diogram__icon6 {
+	position: absolute;
+	bottom: 600px;
+	right: 325px;
+}
+.diogram__icon7 {
+	position: absolute;
+	bottom: 600px;
+	right: 269px;
+}
+.diogram__icon8 {
+	position: absolute;
+	bottom: 539px;
+	left: 292px;
+}
+.diogram__icon9 {
+	position: absolute;
+	bottom: 539px;
+	left: 349px;
+}
+.diogram__icon10 {
+	position: absolute;
+	bottom: 539px;
+	left: 405px;
+}
+.diogram__icon11 {
+	position: absolute;
+	bottom: 539px;
+	right: 405px;
+}
+.diogram__icon12 {
+	position: absolute;
+	bottom: 545px;
+	right: 340px;
+}
+.diogram__icon13 {
+	position: absolute;
+	bottom: 544px;
+	right: 284px;
+	background: grey;
+}
+.skil__icons > img {
+	object-fit: cover;
+}
+.section4__title {
+	width: 663px;
+	height: 65px;
+	top: 1817px;
+	left: 721px;
+	gap: 0px;
+	opacity: 0px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 31px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+.section4__span {
+	color: #a362ff;
+}
 
+.section4__span2 {
+	font-size: 17px;
+}
 /*Response*/
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
 	.menu {
 		gap: 20px;
 	}
@@ -388,9 +494,13 @@ height: 700px;
 		width: 170px;
 		font-size: 16px;
 	}
+
 	.section1__title {
 		width: 280px;
 		font-size: 45px;
+	}
+	.section4__title {
+		width: 400px;
 	}
 	.sec1__texts {
 		gap: 0;
@@ -421,30 +531,46 @@ height: 700px;
 	.section2__title {
 		font-size: 33px;
 	}
-	.card__group{
-		flex-direction:column ;
+	.card__group {
+		flex-direction: column;
 	}
-	.section3__card{
+	.section3__card {
 		width: 380px;
 	}
 }
 @media (max-width: 500px) {
-	.section3__card{
+	.section3__card {
 		width: 350px;
 		overflow: hidden;
 	}
-	
-	.card__text{
+	.skils__diogram {
+		display: none;
+	}
+	.card__text {
 		width: 100px;
+	}
+	.skil__icons > img {
+		position: static;
+		object-fit: cover;
+	}
+	.skil__icons {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		width: 245px;
+	}
+	.section4__title {
+		font-size: 16px;
+		width: 300px;
 	}
 	.card__title {
 		width: 213px;
 	}
-	.section3__back{
+	.section3__back {
 		width: 300px;
 		height: 800px;
 	}
-	.section3__cards{
+	.section3__cards {
 		padding-left: 0;
 	}
 	.section3__title {
@@ -464,11 +590,11 @@ height: 700px;
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
-	}  
+	}
 	.sec1__text1 {
 		flex-direction: column;
 		line-height: 20px;
-	} 
+	}
 	.sec1__text2 {
 		line-height: 20px;
 	}
@@ -489,5 +615,5 @@ height: 700px;
 	.section2__text {
 		width: 280px;
 		font-size: 13px;
-	} 
+	}
 }
