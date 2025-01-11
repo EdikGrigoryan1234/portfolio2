@@ -130,6 +130,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 25px;
 }
 .section1__images {
 	position: relative;
@@ -758,6 +759,9 @@
 		width: 350px;
 		overflow: hidden;
 	}
+	.ellipse1{
+		top: 5px;
+	}
 	.project__text {
 		width: auto;
 		height: auto;
@@ -844,11 +848,11 @@
 		left: 16%;
 	}
 	.section2__title2 {
-		width: 287px;
-	}
+		width: 286px;
+  }
 	.section2__title {
-		font-size: 27px;
-		width: 308px;
+		font-size: 20px;
+		width: 250px;
 	}
 	.section2__text {
 		width: 280px;
