@@ -22,7 +22,9 @@
 	margin: 0 auto;
 	overflow-x: hidden;
 }
-
+.wrapper{
+	overflow: hidden;
+}
 /*PORTFOLIO*/
 
 .header {
@@ -152,8 +154,10 @@
 	width: 188.58px;
 	height: 57.9px;
 	position: absolute;
-	top: 10px;
-	right: -45px;
+	top: 6px;
+    left: -15px;
+	height: 58px;
+	width: 205px;
 }
 
 .section1__title {
@@ -239,7 +243,7 @@
 	font-weight: 400;
 	line-height: 39.75px;
 	letter-spacing: 0.02em;
-	text-align: center;
+
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
 }
@@ -315,7 +319,7 @@
 }
 .card__img {
 	width: 119.99px;
-	height: 98px;
+	height: auto;
 	object-fit: cover;
 }
 .card__title {
@@ -399,17 +403,17 @@
 }
 .diogram__icon1 {
 	position: absolute;
-	bottom: 600px;
+	bottom: 598px;
 	left: 266px;
 }
 .diogram__icon2 {
 	position: absolute;
-	bottom: 603px;
+	bottom: 598px;
 	left: 316px;
 }
 .diogram__icon3 {
 	position: absolute;
-	bottom: 600px;
+	bottom: 596px;
 	left: 370px;
 }
 .diogram__icon4 {
@@ -439,7 +443,7 @@
 }
 .diogram__icon9 {
 	position: absolute;
-	bottom: 539px;
+	bottom: 543px;
 	left: 349px;
 }
 .diogram__icon10 {
@@ -501,7 +505,7 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
-	gap: 150px;
+	/* gap: 150px; */
 	justify-content: center;
 	flex-direction: column;
 	overflow-y: hidden;
@@ -535,7 +539,7 @@
 	height: 165px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 	background: #36124a8e;
 }
 .project__text {
@@ -654,15 +658,18 @@
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
 }
+.project__div + .project__div {
+    padding-top: 100px;
+}
 .contact__text {
-	width: 703px;
+	width: 384px;
 	height: 108px;
 	color: #fff;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 27.1px;
 	letter-spacing: 0.02em;
-	text-align: center;
+	
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;
 }
@@ -774,10 +781,13 @@
 	}
 
 	.text__back {
-		width: 333px;
-		height: auto;
-		margin-top: 50px;
-	}
+		width: 293px;
+		/* height: 258px; */
+		margin-bottom: 42px;
+		/* margin-top: 83px; */
+		margin-top: 80px;
+		padding: 10px;
+  }
 	.skils__diogram {
 		display: none;
 	}
@@ -801,6 +811,10 @@
 	.section4__span2 {
 		font-size: 13px;
 	}
+	.section5{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	.section4__title {
 		font-size: 16px;
 		width: 300px;
@@ -819,6 +833,9 @@
 		width: 285px;
 		height: 135px;
 		text-align: center;
+	}
+	.section1__container{
+		padding-bottom: 0;
 	}
 	.card__img {
 		width: 82.99px;
@@ -850,6 +867,12 @@
 	.section2__title2 {
 		width: 286px;
   }
+  .contact__container{
+	gap: 20px;
+  }
+  .contact{
+	padding-bottom: 50px;
+  }
 	.section2__title {
 		font-size: 20px;
 		width: 250px;
@@ -857,5 +880,15 @@
 	.section2__text {
 		width: 280px;
 		font-size: 13px;
+		
 	}
+	.project__img{
+		width: 300px;
+    height: 168px;
+	}
+	.section5__container{
+	gap: 0;
+	}
+
+
 }
